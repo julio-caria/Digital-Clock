@@ -1,0 +1,146 @@
+/* IMPORT FONT */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&display=swap');
+
+/* COLORS */
+:root {
+    --background: hsl(0, 0%, 9%);
+    --display-background: hsl(0, 0%, 25%);
+    --description-color: hsl(0, 0%, 100%);
+    --time-font: hsl(0, 0%, 70%); 
+    --violet: hsl(271, 76%, 53%);
+}
+
+/* ALL FORMATING */
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+
+    background-color: var(--background);
+    color: var(--description-color);
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1rem;
+
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: var(--description-color);
+    transition: 0.4s ease;
+}
+
+a:hover {
+    color: var(--violet);
+    text-decoration: underline;
+}
+
+/* TIMER */
+
+.container {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.timerapp {
+    margin: 0 auto;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    /* border: 1px solid red; */
+}
+
+.date {
+    display: block;
+    
+    width: 100%;
+
+    margin-block: 2rem;
+    padding-block: 1rem;
+    
+    font-size: 2rem;
+    color: var(--violet);
+    /* border: 1px solid green; */
+}
+
+.displays-timer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    width: 95%;
+    /* border: 1px solid red; */
+
+    position: relative;
+}
+
+
+.time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 12%;
+
+    padding-block: 1.2rem;
+    /* border: 1px solid blue; */
+    margin: 1rem;
+}
+
+.display {
+    width: 100%;
+    height: 35vh;
+    background: var(--display-background);
+
+    border-radius: 5%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 9rem;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+
+.description {
+    color: var(--description-color);
+    text-transform: uppercase;
+
+    font-size: 1.8rem;
+    font-weight: 600;
+    /* border: 1px solid yellow; */
+    margin-block: 1rem;
+}
+
+.credits {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+
+    font-size: 2rem;
+}
+
+.container span {
+    display: flex;
+    align-items: center;
+    gap: 1rem; 
+}

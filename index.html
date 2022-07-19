@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css"/>
+        <title>Digital Clock - HTML/CSS And JavaScript</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <!-- CONTAINER TIMER -->
+            <div class="timerapp">
+                <!-- DATE -->
+                <div class="date">
+                    <p id="display-date"></p>
+                </div>
+                <!-- DISPLAYS -->
+                <div class="displays-timer">
+                    <div class="time">
+                        <div class="display" id="hours"></div>
+                        <p class="description">Hours</p> 
+                    </div>
+                    <div class="time">
+                        <div class="display" id="minutes"></div>
+                        <p class="description">Minutes</p> 
+                    </div>
+                    <div class="time">
+                        <div class="display" id="seconds"></div>
+                        <p class="description">Seconds</p> 
+                    </div>
+                    <div class="time">
+                        <div class="display" id="ampm"></div>
+                        <p class="description">Period</p> 
+                    </div>
+                </div>
+                
+                <!-- END OF DISPLAYS -->
+            </div>
+            <!-- END CONTAINER TIMER -->
+            <a class="credits" href="https://github.com/julio-caria">
+                <span>
+                    <i class="fa-brands fa-github"></i>
+                    Developed by Júlio Caria - 2022
+                </span>
+            </a>
+        </div>
+
+        <script src="./timer.js"></script>
+
+    </body>
+</html>
